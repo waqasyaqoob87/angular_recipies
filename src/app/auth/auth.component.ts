@@ -1,4 +1,3 @@
-import { formatCurrency } from "@angular/common";
 import { Component, ComponentFactoryResolver, OnDestroy, ViewChild } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
@@ -12,10 +11,12 @@ import { PlaceholderDirective } from "../shared/placeholder/placeholder.directiv
     selector: 'app-auth',
     templateUrl: './auth.component.html'
 })
+
 export class AuthComponent implements OnDestroy {
     isLoginMode = true;
     isLoading = false;
     error: string | any = null;
+    
     @ViewChild(PlaceholderDirective) alertHost: PlaceholderDirective |any;
     private closeSub: Subscription | any;
 

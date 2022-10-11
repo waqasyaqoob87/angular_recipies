@@ -31,7 +31,6 @@ export class HeaderComponnent implements OnInit{
   }
 
   onLogout(){
-    console.log('logioi')
     this.authService.logout();
   }
 }

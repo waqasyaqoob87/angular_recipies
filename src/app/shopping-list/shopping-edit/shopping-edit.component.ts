@@ -38,7 +38,7 @@ constructor(private slService: ShoppingListService) { }
     // const ingAmount = this.amountInputRef.nativeElement.value;
     const value = form.value;
     const newIngredient = new Ingredient(value.name, value.amount);
-    this.slService.addIngredient(newIngredient);
+    // this.slService.addIngredient(newIngredient);
     if(this.editMode){
       this.slService.updateIngredient(this.editedItemIndex, newIngredient)
     }else{
